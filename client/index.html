@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="lib/jquery.js"></script>
+<script src="lib/router.js"></script>
+<script src="lib/force.js"></script>
+<script src="app.js"></script>
+<script>
+  // Initialize forcejs here
+  force.init({
+    appId: '3MVG9LBJLApeX_PAalxqzqV7gYcETLO02xz26YHm0p8f8Sp43eXM4vVIMoxMrriaBLY_30jTniejHpXgn04yh',
+    proxyURL: 'http://localhost:3000'
+	});
+
+  force.login(router.start, function (error) {
+    alert('Login failed: ' + JSON.stringify(error, null, 2));
+  });
+</script>
+
+</body>
+</html>
